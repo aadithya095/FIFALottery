@@ -296,23 +296,23 @@ export default function HomePage() {
       {/* ── Match Banner ── */}
       <section className="relative z-10 mx-6 mb-16 rounded-3xl overflow-hidden"
         style={{ background: 'linear-gradient(135deg, #003087 0%, #1a1040 50%, #BF0D3E 100%)', border: '1px solid rgba(201,168,76,0.2)' }}>
-        <div className="px-8 py-10 text-center">
+        <div className="px-4 sm:px-8 py-8 sm:py-10 text-center">
           <p className="text-white/40 text-xs tracking-widest uppercase mb-2">The Match</p>
-          <div className="flex items-center justify-center gap-4 sm:gap-8 flex-wrap">
-            <div className="text-center">
-              <div className="text-5xl mb-2">🇦🇷</div>
-              <p className="font-display text-2xl text-white tracking-widest">ARGENTINA</p>
+          <div className="flex items-center justify-center flex-nowrap gap-1 sm:gap-8">
+            <div className="text-center flex-1 min-w-0">
+              <div style={{ fontSize: 'clamp(1.75rem, 9vw, 3rem)' }} className="mb-1 sm:mb-2">🇦🇷</div>
+              <p style={{ fontSize: 'clamp(0.65rem, 3vw, 1.5rem)' }} className="font-display text-white tracking-wide sm:tracking-widest truncate">ARGENTINA</p>
             </div>
-            <div className="text-center px-4">
-              <p className="font-display text-4xl text-wc-gold tracking-widest">VS</p>
-              <p className="text-white/30 text-xs mt-1">July 19, 2026</p>
+            <div className="text-center px-1 sm:px-4 flex-shrink-0">
+              <p style={{ fontSize: 'clamp(1.1rem, 5vw, 2.25rem)' }} className="font-display text-wc-gold tracking-widest">VS</p>
+              <p className="text-white/30 whitespace-nowrap" style={{ fontSize: 'clamp(0.55rem, 2vw, 0.75rem)' }}>July 19, 2026</p>
             </div>
-            <div className="text-center">
-              <div className="text-5xl mb-2">🇪🇸</div>
-              <p className="font-display text-2xl text-white tracking-widest">SPAIN</p>
+            <div className="text-center flex-1 min-w-0">
+              <div style={{ fontSize: 'clamp(1.75rem, 9vw, 3rem)' }} className="mb-1 sm:mb-2">🇪🇸</div>
+              <p style={{ fontSize: 'clamp(0.65rem, 3vw, 1.5rem)' }} className="font-display text-white tracking-wide sm:tracking-widest truncate">SPAIN</p>
             </div>
           </div>
-          <p className="text-white/30 text-sm mt-4">MetLife Stadium · East Rutherford, New Jersey</p>
+          <p className="text-white/30 text-xs sm:text-sm mt-4">MetLife Stadium · East Rutherford, New Jersey</p>
         </div>
       </section>
 
