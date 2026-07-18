@@ -39,7 +39,7 @@ async function hashPassword(password) {
 }
 
 async function upsertAdmin({ username, password_hash, role }) {
-  const url = `${process.env.SUPABASE_URL}/rest/v1/admins`
+  const url = `${process.env.SUPABASE_URL}/rest/v1/admins?on_conflict=username`
   const response = await fetch(url, {
     method: 'POST',
     headers: {
