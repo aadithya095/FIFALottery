@@ -29,7 +29,7 @@ export const handler = async (event) => {
       voided_at: null,
       voided_by: null,
     })
-    .in('status', ['assigned'])
+    .not('id', 'is', null)
 
   if (playerError) {
     console.error('reset players error:', playerError.message)
